@@ -57,9 +57,11 @@ class DepartmentController extends Controller
 
 
 
-    public function delete(Request $request, $id)
+    public function delete(Request $request,Department $department)
     {
-        $department = Department::find($id);
+        // $department = Department::find($id);
+
+        // dd($department);
         $department->delete();
         // Department::find($id)f->delete();
 

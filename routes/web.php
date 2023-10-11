@@ -32,7 +32,7 @@ Route::get('departments/create', [DepartmentController::class, 'create']) ->name
 Route::post('departments/store', [DepartmentController::class, 'store']) ->name('departmentsStore');
 
 
-Route::post('departments/delete/{id}', [DepartmentController::class, 'delete']) ->name('departmentsDelete');
+Route::post('departments/delete/{department}', [DepartmentController::class, 'delete']) ->name('departmentsDelete');
 
 
 Route::get('departments/edit/{id}', [DepartmentController::class, 'edit']) ->name('departmentsEdit');
@@ -47,7 +47,7 @@ Route::get('departments/test', [DepartmentController::class, 'test']) ;
 
 
 Route::get('users/index', [UserController::class, 'index']) -> name ('usersIndex');
-
+//dewd
 
 
 // Route::get('deparments/index', function () {

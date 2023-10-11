@@ -36,7 +36,7 @@
                                         </a>
                                     </div>
                                     <div class="float-left mx-1">
-                                        <form action="{{route('departmentsDelete', $department->id)}}" method="POST">
+                                        <form action="{{route('departmentsDelete', $department)}}" method="POST">
                                             @csrf
                                             <button class="btn btn-danger">
                                                 <i class="fa fa-trash"></i>
