@@ -17,13 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('dashboard');
-// });
+Route::get('/', function () {
+    return view('app');
+})
+->name('application');
 
 
-
-Route::get('/', [HomeController::class, 'dashboard']); 
+// Route::get('/', [HomeController::class, 'dashboard']); 
 
 Route::get('departments/index', [DepartmentController::class, 'index']) ->name('departmentsIndex');
 
